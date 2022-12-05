@@ -12,27 +12,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.api.trabalhofinal.placeholder.PlaceholderContent;
+import com.api.trabalhofinal.objetos.Eventos;
+import com.api.trabalhofinal.objetos.Usuarios;
+import com.api.trabalhofinal.objetos.UsuariosEventos;
 
-/**
- * A fragment representing a list of Items.
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class listaEventosFragment extends Fragment {
 
-    // TODO: Customize parameter argument names
+
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager layoutManager;
+
     private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
+
     private int mColumnCount = 1;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
     public listaEventosFragment() {
     }
 
-    // TODO: Customize parameter initialization
-    @SuppressWarnings("unused")
     public static listaEventosFragment newInstance(int columnCount) {
         listaEventosFragment fragment = new listaEventosFragment();
         Bundle args = new Bundle();
@@ -48,6 +49,7 @@ public class listaEventosFragment extends Fragment {
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
+
     }
 
     @Override
@@ -55,17 +57,35 @@ public class listaEventosFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_eventos_lista, container, false);
 
-        // Set the adapter
-        if (view instanceof RecyclerView) {
-            Context context = view.getContext();
-            RecyclerView recyclerView = (RecyclerView) view;
-            if (mColumnCount <= 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
-            }
-            recyclerView.setAdapter(new MylistaEventosRecyclerViewAdapter(PlaceholderContent.ITEMS));
+        DbHelper db = new DbHelper(getActivity());
+
+        int userId = 0;
+        if (getArguments() != null) {
+            userId = getArguments().getInt("userId");
         }
+
+        List<UsuariosEventos> eventosUserList = db.getUsuariosEventos(db.getUserById(userId));
+
+        List<Eventos> eventosList = new ArrayList<Eventos>();
+
+        if (eventosUserList.size() != 0) {
+            for (int position = 0; position < eventosUserList.size(); position++) {
+                eventosList.add(eventosUserList.get(position).getIdEvento());
+            }
+
+        }
+
+        recyclerView = (RecyclerView) view.findViewById(R.id.listEventos);
+        mAdapter = new RecyclerViewAdapter(eventosList, getActivity(), 1);
+
+
+        // Set the adapter
+
+        recyclerView.setAdapter(mAdapter);
+
+
         return view;
     }
+
+
 }

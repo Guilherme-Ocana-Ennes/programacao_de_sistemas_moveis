@@ -26,8 +26,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     int listaId;
 
 
-    public RecyclerViewAdapter(List<Eventos> productList, Context context, int listaId) {
-        this.eventosList = productList;
+    public RecyclerViewAdapter(List<Eventos> eventosList, Context context, int listaId) {
+        this.eventosList = eventosList;
         this.context = context;
         this.listaId = listaId;
     }
@@ -55,17 +55,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
+
         holder.eventName.setText(eventosList.get(position).getNome());
         holder.eventDate.setText(eventosList.get(position).getData());
 
-        holder.eventDate.setBackgroundColor(Color.GREEN);
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
 
-                    holder.eventDate.setBackgroundColor(Color.RED);
+                    Intent eventAct = new Intent(context, DetailEvent.class);
+                    eventAct.putExtra("Id",eventosList.get(position).getId());
+                    context.startActivity(eventAct);
 
 
                 }catch (Exception e){

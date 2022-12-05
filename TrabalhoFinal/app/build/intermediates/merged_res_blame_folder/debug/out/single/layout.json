@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\login.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\activity_fotos.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\activity_fotos.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\fragment_item_list.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\fragment_item_list.xml"
+    },
+    {
+        "merged": "com.api.trabalhofinal.app-mergeDebugResources-32:/layout/activity_add_event.xml",
+        "source": "com.api.trabalhofinal.app-main-35:/layout/activity_add_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\activity_add_event.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\activity_add_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\activity_detail_event.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\activity_detail_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\fragment_eventos_lista.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\fragment_eventos_lista.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\activity_convidados.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\activity_convidados.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\activity_descricao.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\activity_descricao.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\activity_sing_up.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\activity_sing_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\fragment_eventos_row.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\fragment_eventos_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\fragment_item.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\fragment_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\main_menu.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-mergeDebugResources-32:\\layout\\fragment_filter.xml",
+        "source": "C:\\Users\\lucas\\.gradle\\daemon\\7.3.3\\com.api.trabalhofinal.app-main-35:\\layout\\fragment_filter.xml"
+    }
+]

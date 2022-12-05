@@ -1,6 +1,4 @@
-package com.api.trabalhofinal.placeholder.objetos;
-
-import com.api.trabalhofinal.placeholder.PlaceholderContent;
+package com.api.trabalhofinal.objetos;
 
 import java.util.ArrayList;
 import java.util.List;

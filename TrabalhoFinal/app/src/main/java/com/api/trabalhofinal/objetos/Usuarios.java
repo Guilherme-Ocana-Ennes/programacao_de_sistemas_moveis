@@ -1,4 +1,4 @@
-package com.api.trabalhofinal.placeholder.objetos;
+package com.api.trabalhofinal.objetos;
 
 import java.util.IdentityHashMap;
 
